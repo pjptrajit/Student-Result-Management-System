@@ -54,6 +54,7 @@ if(strlen($_SESSION['alogin'])=="")
                                 <div class="row">
                                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <a class="dashboard-stat bg-primary" href="manage-students.php">
+                                           
 <?php
 $sql1 ="SELECT StudentId from tblstudents ";
 $query1 = $dbh -> prepare($sql1);
@@ -63,11 +64,12 @@ $totalstudents=$query1->rowCount();
 ?>
 
                                             <span class="number counter"><?php echo htmlentities($totalstudents);?></span>
-                                            <span class="name">Regd Users</span>
+                                            <span class="name">Total Student Redg</span>
                                             <span class="bg-icon"><i class="fa fa-users"></i></span>
                                         </a>
                                         <!-- /.dashboard-stat -->
                                     </div>
+                                   
                                     <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
 
                                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
