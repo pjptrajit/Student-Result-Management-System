@@ -126,13 +126,13 @@ $cnt++;}
 <td><b><?php echo htmlentities($totlcount); ?></b> out of <b><?php echo htmlentities($outof=($cnt-1)*100); ?></b></td>
                                                         </tr>
 <tr>
-                                                <th scope="row" colspan="2">Percntage</th>           
+                                                <th scope="row" colspan="2">Percentage</th>           
                                                             <td><b><?php echo  htmlentities($totlcount*(100)/$outof); ?> %</b></td>
                                                              </tr>
-<tr>
+<!-- <tr>
                                                 <th scope="row" colspan="2">Download Result</th>           
                                                             <td><b><a href="download-result.php">Download </a> </b></td>
-                                                             </tr>
+                                                             </tr> -->
 
  <?php } else { ?>     
 <div class="alert alert-warning left-icon-alert" role="alert">
